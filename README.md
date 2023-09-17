@@ -47,6 +47,10 @@ The primary objectives of this data mining project are as follows:
 5. **Model Training and Tuning**: Model Training and Tuning involves training a machine learning model on a dataset to learn patterns and relationships and then optimizing the model's hyperparameters to achieve the best possible predictive performance. This iterative process aims to find the most accurate and effective model configuration for a specific task.
 6. **Evaluation Metrics**: Evaluation metrics are quantitative measures used to assess the performance or accuracy of a predictive model or algorithm by quantifying the degree of its predictions' agreement with the actual observed outcomes. These metrics help understand how well a model performs its intended task, whether predicting values, classifying data, or solving other machine learning and data mining tasks. Common evaluation metrics include Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), accuracy, precision, recall, and F1-score, depending on the specific task and context.
 
+## Correlation Heatmap of the Data
+
+![correlation_heatmap](https://github.com/dp2292/CP01-Data-Alchemists/blob/Prarthee/correlation_heatmap.png)
+
 ## Expected Outcomes
  - A predictive model capable of accurately estimating Seoul bike rentals' trip duration and temperature of a place.
  - Insights into the factors that most influence trip duration, including weather conditions, time of day, and seasonal variations.
