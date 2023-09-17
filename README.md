@@ -53,5 +53,14 @@ The primary objectives of this data mining project are as follows:
  - Improved user experience for bike riders through more accurate trip duration and temperature predictions.
 
 ## Conclusion
-- In **predicting the trip's duration**, a thorough evaluation of machine learning models reveals that the **XGBoost Regressor** is the most favorable option among the other methods used, namely Linear Regression, Ridge Regression, Lasso Regression, ElasticNet Regression, XGBRgressor, Random Forest Regression and LGBMRegressor It demonstrates an adept ability to strike an appropriate equilibrium between effectively capturing the nuances of the training data and exhibiting robust generalization to the test data, resulting in a commendable overall predictive performance. The insights for each model are described in detail in the collab file.
-- 
+1. In **predicting the trip's duration**, a thorough evaluation of machine learning models reveals that the **XGBoost Regressor** is the most favorable option among the other methods used, namely Linear Regression, Ridge Regression, Lasso Regression, ElasticNet Regression, XGBRgressor, Random Forest Regression and LGBMRegressor It demonstrates an adept ability to strike an appropriate equilibrium between effectively capturing the nuances of the training data and exhibiting robust generalization to the test data, resulting in a commendable overall predictive performance. The insights for each model are given below:
+    - ElasticNet Regression: Train Score:  0.53 & Test Score:  0.54
+    - Random forest Regression: Train Score 0.96 & Test Score 0.70
+    - XGBoost Regressor: Train Score 0.78 & Test Score 0.77
+    - LGBMRegressor: Train Score 0.75 & Test Score 0.75
+- In **predicting the temperature**, we conclude from the provided scores that it might seem like Random Forest has the best performance because it has perfect scores of 1.00 for both the training and test sets. However, achieving perfect scores on training and test data is usually a sign of overfitting. Based on the provided scores, it's easier to conclude which model is the best with additional information or a more comprehensive evaluation. Models like XGBoost, LGBMRegressor, and ElasticNet, which have high scores but could be better, may be better choices as they are less likely to overfit and may have better generalization to unseen data. The insights for each model are given below:
+    - ElasticNet Regression: Train Score:  0.94 & Test Score:  0.94
+    - Random forest Regression: Train Score 1.00 & Test Score 1.00
+    - XGBoost Regressor: Train Score 0.99 & Test Score 0.99
+    - LGBMRegressor: Train Score 0.98 & Test Score 0.98
+However, the choice between these models depends on various factors, including the specific problem you are trying to solve, the size and quality of your dataset, and computational resources.
