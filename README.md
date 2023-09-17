@@ -36,14 +36,45 @@ The dataset used in this project contains the following key attributes:
 - **Pickup and Drop-off Minute**: Minute of the hour of the pickup and drop-off for a trip.
 - **Pickup and Drop-off Week of the day**: Day of the week of the pickup and drop-off for a trip.
 
+## Dataset Attributes
+
+| Attribute      | Data Type  | Description                                   |
+| -------------- | ---------- | --------------------------------------------- |
+| Duration       | int8       | Trip duration in minutes                      |
+| Distance       | int8       | Trip distance in meters                       |
+| PLong          | float32   | Pickup longitude                              |
+| PLatd          | float32   | Pickup latitude                               |
+| DLong          | float32   | Dropoff longitude                             |
+| DLatd          | float64   | Dropoff latitude                              |
+| Haversine      | float32   | Haversine distance function (longitude and latitude) |
+| Pmonth         | int8       | Pickup month (1-12)                          |
+| Pday           | int8       | Pickup day of the month (1-31)               |
+| Phour          | int8       | Pickup hour (0-23)                           |
+| Pmin           | int8       | Pickup minute (0-59)                         |
+| PDweek         | int8       | Pickup day of the week (0-6, Monday-Sunday) |
+| Dmonth         | int8       | Dropoff month (1-12)                         |
+| Dday           | int8       | Dropoff day of the month (1-31)              |
+| Dhour          | int8       | Dropoff hour (0-23)                          |
+| Dmin           | int8       | Dropoff minute (0-59)                        |
+| DDweek         | int8       | Dropoff day of the week (0-6, Monday-Sunday) |
+| Temp           | float32   | Temperature (in Celsius)                     |
+| Precip         | float32   | Precipitation (in mm)                        |
+| Wind           | float32   | Wind speed (in m/s)                          |
+| Humid          | float64   | Humidity (%)                                 |
+| Solar          | float32   | Solar radiation (in W/m²)                    |
+| Snow           | float32   | Snowfall (in mm)                             |
+| GroundTemp     | float32   | Ground temperature (in Celsius)              |
+| Dust           | float32   | 1-hour average fine dust concentration      |
+
+
 ## Objectives
 
 The primary objectives of this data mining project are as follows:
 
-1. **Data Preprocessing**: Data preprocessing refers to the initial step in data analysis, where raw data is cleaned, transformed, and organized to make it suitable for further analysis and modeling. It involves handling missing values, dealing with outliers, standardizing data formats, and encoding categorical variables, ensuring that the data is usable and consistent before applying data mining or machine learning techniques.
-2. **Exploratory Data Analysis (EDA)**: Exploratory Data Analysis (EDA) is visually and statistically analyzing a dataset to summarize its main characteristics, gain insights, and uncover patterns or anomalies. It involves techniques such as data visualization, summary statistics, and correlation analysis to understand better the data's structure, relationships between variables, and potential areas of further investigation in data analysis and modeling tasks.
+1. **Data Preprocessing**: Data preprocessing refers to the initial step in data analysis, where raw data is cleaned, transformed, and organized to make it suitable for further analysis and modeling. It involves handling missing values, dealing with outliers, standardizing data formats, and encoding categorical variables, ensuring the data is usable and consistent before applying data mining or machine learning techniques. Our dataset had 9,601,139 instances of data having 26 features, out of which we dropped one unnamed feature.
+2. **Exploratory Data Analysis (EDA)**: Exploratory Data Analysis (EDA) is visually and statistically analyzing a dataset to summarize its main characteristics, gain insights, and uncover patterns or anomalies. It involves techniques such as data visualization, summary statistics, and correlation analysis to understand better the data's structure, relationships between variables, and potential areas of further investigation in data analysis and modeling tasks. To visualize and understand the data, we have made box[lots, count plots, pie charts, bar graphs, point plots, violin plots, heatmaps, etc.
 3. **Feature Engineering**: Feature Engineering is the process of creating new, relevant, and informative features or transformations of existing ones from raw data to improve the performance of machine learning models. It involves selecting, combining, or transforming variables better to represent the underlying patterns and relationships in the data, ultimately enhancing the model's ability to make accurate predictions or classifications.
-4. **Model Selection:**: Model Selection is the process of choosing the most suitable machine learning algorithm or model from a set of candidate models to best address a specific problem or task based on factors like performance, accuracy, and generalization ability.
+4. **Model Selection:**: Model Selection is the process of choosing the most suitable machine learning algorithm or model from a set of candidate models to best address a specific problem or task based on factors like performance, accuracy, and generalization ability. We implemented Linear Regression, Ridge Regression, Lasso Regression, ElasticNet Regression, Random Forest Regressor, XGB Rgressor, LGBM Regressor.
 5. **Model Training and Tuning**: Model Training and Tuning involves training a machine learning model on a dataset to learn patterns and relationships and then optimizing the model's hyperparameters to achieve the best possible predictive performance. This iterative process aims to find the most accurate and effective model configuration for a specific task.
 6. **Evaluation Metrics**: Evaluation metrics are quantitative measures used to assess the performance or accuracy of a predictive model or algorithm by quantifying the degree of its predictions' agreement with the actual observed outcomes. These metrics help understand how well a model performs its intended task, whether predicting values, classifying data, or solving other machine learning and data mining tasks. Common evaluation metrics include Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), accuracy, precision, recall, and F1-score, depending on the specific task and context.
 
